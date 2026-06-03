@@ -1,4 +1,4 @@
-name: Build_XG_040G_MD_OpenWrt_25_12
+name: Build_XG_040G_MD_fanchmwrt_25_12
 
 permissions:
   contents: write
@@ -16,15 +16,15 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/xg-040g-md-openwrt-25.12.yml"
+      - ".github/workflows/xg-040g-md-fanchmwrt-25.12.yml"
       - "config/**"
       - "scripts/**"
       - "feeds.conf.default"
 
 env:
   CONFIG_FILE: "config/xg-040g-md.config"
-  REPO_URL: https://github.com/xiangtailiang/openwrt.git
-  REPO_BRANCH: openwrt-25.12
+  REPO_URL: https://github.com/fanchmwrt/fanchmwrt.git
+  REPO_BRANCH: fanchmwrt-25.12.4
   FEEDS_CONF: feeds.conf.default
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
